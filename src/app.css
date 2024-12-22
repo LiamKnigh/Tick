@@ -1,1 +1,97 @@
 @import "tailwindcss";
+
+/**
+* These are variable fonts from https://www.fontshare.com
+*/
+@font-face {
+  font-family: 'Chubbo';
+  src: url('/fonts/Chubbo-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chubbo';
+  src: url('/fonts/Chubbo-VariableItalic.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Supreme';
+  src: url('/fonts/Supreme-Variable.ttf') format('truetype');
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Supreme';
+  src: url('/fonts/Supreme-VariableItalic.ttf') format('truetype');
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: italic;
+}
+
+@theme {
+
+    --color-brand-text: #E2D5B9;
+    --color-brand-text-50: #F4EFE4;
+    --color-brand-text-100: #EEE6D6;
+    --color-brand-text-200: #E2D5B9;
+    --color-brand-text-300: #D6C49C;
+    --color-brand-text-400: #CAB27F;
+    --color-brand-text-500: #BEA162;
+    --color-brand-text-600: #AF8F49;
+    --color-brand-text-700: #92773D;
+    --color-brand-text-800: #766031;
+    --color-brand-text-900: #594825;
+    --color-brand-text-950: #4A3C1F;
+
+    --color-brand-background: #1F1F2D;
+    --color-brand-background-50: #B3B3CB;
+    --color-brand-background-100: #A7A7C2;
+    --color-brand-background-200: #8F8FB2;
+    --color-brand-background-300: #7777A1;
+    --color-brand-background-400: #62628E;
+    --color-brand-background-500: #515175;
+    --color-brand-background-600: #40405D;
+    --color-brand-background-700: #303045;
+    --color-brand-background-800: #1F1F2D;
+    --color-brand-background-900: #0E0E15;
+    --color-brand-background-950: #060609;
+
+    --color-brand-primary: #F8C96F;
+    --color-brand-primary-50: #FFFCF7;
+    --color-brand-primary-100: #FEF5E4;
+    --color-brand-primary-200: #FCE6BD;
+    --color-brand-primary-300: #FAD896;
+    --color-brand-primary-400: #F8C96F;
+    --color-brand-primary-500: #F6BA48;
+    --color-brand-primary-600: #F4AC21;
+    --color-brand-primary-700: #E2980B;
+    --color-brand-primary-800: #BB7E09;
+    --color-brand-primary-900: #946407;
+    --color-brand-primary-950: #805606;
+
+    --color-brand-secondary: #2B7C70;
+    --color-brand-secondary-50: #A7E0D8;
+    --color-brand-secondary-100: #98DBD1;
+    --color-brand-secondary-200: #79D1C4;
+    --color-brand-secondary-300: #5BC6B6;
+    --color-brand-secondary-400: #40B9A7;
+    --color-brand-secondary-500: #369A8B;
+    --color-brand-secondary-600: #2B7C70;
+    --color-brand-secondary-700: #205E55;
+    --color-brand-secondary-800: #163F39;
+    --color-brand-secondary-900: #0B211E;
+    --color-brand-secondary-950: #061210;
+
+    --font-supreme: 'Supreme';
+    --font-chubbo: 'Chubbo';
+}
+
+@layer base {
+    body {
+        @apply bg-brand-background text-brand-text scheme-only-dark font-supreme;
+    }
+}
