@@ -1,7 +1,10 @@
 <script lang="ts">
-  import "../app.css";
+    import "../reset.css";
+    import "../app.css";
+    import Footer from "$lib/sections/footer.svelte";
 
-  let { children } = $props();
+    let { children } = $props();
 </script>
 
 {@render children()}
+<Footer />
